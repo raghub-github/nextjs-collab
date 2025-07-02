@@ -11,32 +11,27 @@ export const navLinks = [
   },
   {
     id: 3,
-    url: "/pdfs/free",
-    label: "Free PDFs",
+    url: "/pdfs",
+    label: "PDFs",
   },
   {
     id: 4,
-    url: "/pdfs/paid",
-    label: "Paid PDFs",
-  },
-  {
-    id: 5,
     url: "/quiz",
     label: "Quiz",
   },
   {
-    id: 6,
+    id: 5,
     url: "/downloads",
     label: "Downloads",
   },
   {
-    id: 7,
+    id: 6,
     url: "/profile",
     label: "Profile",
   },
   {
-    id: 8,
-    url: "/contact", // Optional: You can add this static route
+    id: 7,
+    url: "/contact", 
     label: "Contact",
   },
 ];
