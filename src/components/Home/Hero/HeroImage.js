@@ -1,11 +1,16 @@
+'use client';
+
 import React from 'react'
 import Image from 'next/image';
+import Tilt from 'react-parallax-tilt';
 
 const HeroImage = () => {
   return (
-    <div className='relative w-full h-64 lg:h-full'>
-      <Image src="/images/hero-image.jpg" alt="Hero" layout='fill' className='object-cover w-full h-full rounded-lg shadow-lg' />
-    </div>
+    <Tilt>
+      <div className='hidden lg:block overflow-hidden'>
+        <Image src="/images/hero.png" width={800} height={600} alt="Hero"/>
+      </div>
+    </Tilt>
   )
 }
 

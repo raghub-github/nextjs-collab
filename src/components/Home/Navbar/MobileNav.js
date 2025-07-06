@@ -13,7 +13,7 @@ const MobileNav = ({ showNav, toggleNav }) => {
       <div className={`fixed top-0 bottom-0 right-0 left-0 bg-black opacity-70 transform transition-all duration-500 h-[100vh] w-full z-[10000] ${navOpen}`}></div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`fixed top-[-20] transform flex transition-all duration-500 text-white justify-center flex-col h-[100vh] z-[100006] delay-300 w-[80%] sm:w-[60%] bg-indigo-900 space-y-6 ${navOpen}`}>
+      <div className={`fixed top-[-20px] transform flex transition-all duration-500 text-white justify-center flex-col h-[100vh] z-[100006] delay-300 w-[80%] sm:w-[60%] bg-indigo-900 space-y-6 ${navOpen}`}>
         {navLinks.map((link) => {
           return (
             <Link key={link.id} href={link.url}>

@@ -14,7 +14,7 @@ const Nav = ({ toggleNav }) => {
         const handleScroll = () => {
             if (window.scrollY >= 90) {
                 setNavBg(true);
-            } 
+            }
             if (window.scrollY < 90) {
                 setNavBg(false);
             }
@@ -30,7 +30,8 @@ const Nav = ({ toggleNav }) => {
         <div className={`fixed ${navBg ? 'bg-indigo-800' : 'fixed'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
             <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
                 {/* Logo */}
-                <Image src="/images/logo.png" alt="Logo" width={120} height={120} />
+                <Image src="/images/s1_logo.png" alt="Logo" width={60} height={60} className='lg:pt-1' />
+                {/* <Image src="/images/logo.png" alt="Logo" width={120} height={120} /> */}
                 {/* NavLinks */}
                 <div className="hidden lg:flex items-center space-x-10">
                     {navLinks.map((link) => {
