@@ -8,10 +8,10 @@ const HeroImage = () => {
   return (
     <Tilt>
       <div className='hidden lg:block overflow-hidden'>
-        <Image src="/images/hero.png" width={800} height={600} alt="Hero"/>
+        <Image src="/images/hero.png" priority width={600} height={500} alt="Hero" />
       </div>
     </Tilt>
-  )
+  );
 }
 
-export default HeroImage
+export default HeroImage;

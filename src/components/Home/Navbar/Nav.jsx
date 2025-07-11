@@ -27,10 +27,11 @@ const Nav = ({ toggleNav }) => {
     }, []);
 
     return (
-        <div className={`fixed ${navBg ? 'bg-indigo-800' : 'fixed'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
+        // <div className={`fixed ${navBg ? 'bg-indigo-800' : 'fixed'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
+        <div className={`fixed top-0 left-0 right-0 ${navBg ? 'bg-indigo-800' : 'bg-transparent'} w-full transition-all duration-200 h-[10vh] sm:h-[12vh] md:h-[12vh] lg:h-[12vh] xl:h-[12vh] z-[1000]`}>
             <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
                 {/* Logo */}
-                <Image src="/images/s1_logo.png" alt="Logo" width={60} height={60} className='lg:pt-1' />
+                <Image src="/images/s1_logo.png" alt="Logo" width={45} height={45} className='lg:pt-1' />
                 {/* <Image src="/images/logo.png" alt="Logo" width={120} height={120} /> */}
                 {/* NavLinks */}
                 <div className="hidden lg:flex items-center space-x-10">

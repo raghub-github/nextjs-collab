@@ -17,7 +17,7 @@ const ResponsiveNav = () => {
       <Nav toggleNav={toggleNav} />
       <MobileNav showNav={showNav} toggleNav={toggleNav} />
     </>
-  )
+  );
 }
 
-export default ResponsiveNav
+export default ResponsiveNav;
